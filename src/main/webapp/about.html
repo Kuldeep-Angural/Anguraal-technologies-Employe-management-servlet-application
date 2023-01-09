@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="CssContainer/style.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        width: 100wh;
+        background-image: url(pexels.jpg);
+
+        /* background-position: center;
+    background-size: cover; */
+        height: 100vh;
+    }
+
+    .navbar {
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+    }
+
+    .icon {
+        width: 200px;
+        float: left;
+        height: 70px;
+    }
+
+    .logo {
+        color: #e76a05;
+        font-size: 35px;
+        font-family: Arial;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 5px
+    }
+
+    .menu {
+        width: 400px;
+        float: left;
+        height: 70px;
+    }
+
+    ul {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin-left: 123px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 1.0s ease-in-out;
+    }
+
+    ul li a:hover {
+        color: #e76a05;
+    }
+
+    .search {
+        width: 330px;
+        float: left;
+        margin-left: 270px;
+    }
+
+    .srch {
+        font-family: 'Times New Roman';
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid #f80d0d;
+        margin-top: 13px;
+        color: #fff;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        background: #f80d0d;
+        border: 2px solid #f80d0d;
+        margin-top: 13px;
+        color: #fff;
+        font-size: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: #000;
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+
+    .srch:focus {
+        outline: none;
+    }
+
+    .content {
+        width: 1200px;
+        height: 72vh;
+        margin: auto;
+        color: #fff;
+        position: relative;
+    }
+
+    .content .par {
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+    }
+
+    .content h1 {
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 4%;
+        letter-spacing: 2px;
+    }
+
+    .content .cn {
+        width: 224px;
+        height: 37px;
+        background: #e76a05;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .4s ease;
+        box-sizing: border-box;
+        position: relative;
+        top: 10px;
+
+    }
+
+    .content .cn a {
+        text-decoration: none;
+        color: #000;
+        transition: .3s ease;
+    }
+
+    .cn:hover {
+        background-color: #fff;
+    }
+
+    .content span {
+        color: #e76a05;
+        font-size: 58px
+    }
+
+
+    .btnn {
+        width: 240px;
+        height: 40px;
+        background: #f80d0d;
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        transition: 0.4s ease;
+    }
+
+    .btnn:hover {
+        background: #fff;
+        color: #f80d0d;
+    }
+
+    .btnn a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .form .link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .form .link a {
+        text-decoration: none;
+        color: #f80d0d;
+    }
+
+    .liw {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .icons ion-icon {
+        color: #fff;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+    }
+
+    .icons ion-icon:hover {
+        color: #f80d0d;
+    }
+
+    footer {
+        background-color: #e86126eb;
+        color: white;
+        font-size: 0.8rem;
+        padding: -2px 20px;
+        text-align: center;
+    }
+
+    .viewport {
+        box-sizing: border-box;
+        height: 490px;
+        width: 454px;
+        position: relative;
+        top: -6px;
+        right: -760px;
+        /* background-color: red; */
+        overflow: scroll;
+
+    }
+
+    .viewport::-webkit-scrollbar {
+    display: none;
+    }
+    .card{
+        box-sizing: border-box;
+        position: relative;
+        top: 93px;
+        left: 100px;
+        height: 223px;
+        width: 233px;
+        
+        /* background-color: #f80d0d; */
+    }
+    .info h1{
+        box-sizing: border-box;
+        position: relative;
+        top: 50px;
+        height: 30px;
+        left: 170px;
+       width: 200px;
+        /* background-color: #f80d0d; */
+    }
+    .contact{
+        height: 70px;
+        width: 470px;
+        /* background-color: #f80d0d; */
+        position: relative;
+        top :-69px;
+        right: -10px;
+    }
+    .contact p{
+        font-style: 90px;
+    }
+</style>
+
+
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Angural Technologies</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="Login-SignUp.html">SIGNUP</a></li>
+                    <li><a href="contactUs.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="info"><h1> </h1></div>
+            <div class="card"> <img src="navvPic.jpg" alt="" height="100%" width="100%">
+                <h4>Kuldeep Kumar <br>
+                kuldeep.navv@gmail.com <br>
+                Full Stack Engineer
+                <br>mob:9855171485
+                </h4></div>
+           
+
+
+        </div>
+        
+            <div class="viewport">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptatum dolorum voluptates, natus ipsa
+                reiciendis eveniet fugit itaque labore nobis similique, praesentium est quos odio tenetur! Magni
+                nesciunt assumenda unde consectetur ipsa, dicta distinctio qui quasi odit, cum vel et sequi ea esse
+                cupiditate, doloremque maxime quidem excepturi inventore. Natus debitis aliquam non autem qui iusto sit
+                laudantium, alias numquam reiciendis molestias. Molestias quam animi quia facilis illo non sed illum
+                tempore veniam. Totam quibusdam voluptatum harum dolor ipsa perspiciatis rerum porro animi vero
+                delectus! Harum vel dignissimos deleniti aliquid ea dolorem possimus culpa esse, nihil nostrum
+                doloremque repellat aspernatur libero assumenda omnis necessitatibus in deserunt itaque fugit odio a
+                accusamus! Quisquam facilis nesciunt distinctio sequi blanditiis repellendus ducimus atque vero beatae
+                accusamus ipsam, magnam architecto ratione asperiores dignissimos, quo non, voluptas molestias. Incidunt
+                saepe neque illo cupiditate laudantium aperiam? Modi repellendus obcaecati ea aliquid ullam repellat
+                tempore delectus maxime porro accusantium! Optio deleniti dolorum odio saepe? Possimus, voluptates
+                cumque ipsum quibusdam alias accusamus, officia fugiat veniam, obcaecati molestiae tempore. Autem
+                laudantium numquam similique odio optio cum natus corporis fuga nam sed! Sint cumque fugiat totam fugit
+                amet recusandae odio ea, ex qui quidem dolore libero alias labore inventore repellat reiciendis
+                cupiditate, nesciunt rerum quo ipsa! Animi iure cum incidunt temporibus autem, similique doloribus
+                facere reiciendis aperiam fuga repellendus consequatur inventore eveniet eum quae nam. Temporibus ea
+                ratione magni aspernatur pariatur quia quis quam, illum aliquam sequi dolorem dicta voluptatibus minima
+                consectetur iste autem vel doloremque ipsum, amet recusandae quaerat. Blanditiis repudiandae provident
+                aperiam aspernatur quos quidem harum labore et dolores at exercitationem amet dolor corrupti sequi quasi
+                sunt officia commodi autem laudantium, rem architecto, vitae facere laboriosam? Modi accusamus
+                reprehenderit voluptatem laboriosam beatae, minus maiores voluptate placeat consequatur veritatis,
+                reiciendis expedita necessitatibus praesentium labore aspernatur provident voluptatibus quod excepturi
+                voluptas laudantium molestias dolores. Omnis aspernatur animi placeat itaque fuga officiis ducimus unde,
+                architecto culpa. Error magni qui quaerat? Illo error ea vero quam! Error deleniti iusto molestiae quos
+                expedita ipsam, perferendis illo omnis porro magni id repudiandae distinctio magnam veniam doloremque
+                repellendus sint, facere hic eligendi harum adipisci! Ipsam, quibusdam! Modi velit error unde architecto
+                adipisci cumque iste quasi quas tempora quidem assumenda exercitationem totam, nostrum officiis delectus
+                illo in ratione vitae numquam! Cupiditate atque necessitatibus id voluptatum perferendis tempore ab,
+                quidem quis incidunt sed fugit nesciunt quaerat natus consequatur. Atque iste reprehenderit assumenda
+                veniam nulla autem magni voluptate recusandae provident inventore sequi quis sint, iure voluptates
+                nostrum. Voluptas nisi vero inventore suscipit voluptatem a qui porro harum minima odit expedita facere
+                iste iusto dolores ullam nobis molestias natus, pariatur repellendus cum cupiditate perferendis soluta!
+                Voluptates neque, eligendi blanditiis vero voluptas impedit maxime nemo quibusdam? Perferendis qui at
+                debitis atque, sunt sapiente perspiciatis commodi eos tenetur deserunt modi minus veritatis delectus
+                numquam fugit sint veniam animi neque. Perspiciatis quia placeat est velit similique quaerat, iste
+                soluta fuga inventore ullam?
+                
+                ratione magni aspernatur pariatur quia quis quam, illum aliquam sequi dolorem dicta voluptatibus minima
+                consectetur iste autem vel doloremque ipsum, amet recusandae quaerat. Blanditiis repudiandae provident
+                aperiam aspernatur quos quidem harum labore et dolores at exercitationem amet dolor corrupti sequi quasi
+                sunt officia commodi autem laudantium, rem architecto, vitae facere laboriosam? Modi accusamus
+                reprehenderit voluptatem laboriosam beatae, minus maiores voluptate placeat consequatur veritatis,
+                reiciendis expedita necessitatibus praesentium labore aspernatur provident voluptatibus quod excepturi
+                voluptas laudantium molestias dolores. Omnis aspernatur animi placeat itaque fuga officiis ducimus unde,
+                architecto culpa. Error magni qui quaerat? Illo error ea vero quam! Error deleniti iusto molestiae quos
+                expedita ipsam, perferendis illo omnis porro magni id repudiandae distinctio magnam veniam doloremque
+                repellendus sint, facere hic eligendi harum adipisci! Ipsam, quibusdam! Modi velit error unde architecto
+                adipisci cumque iste quasi quas tempora quidem assumenda exercitationem totam, nostrum officiis delectus
+                illo in ratione vitae numquam! Cupiditate atque necessitatibus id voluptatum perferendis tempore ab,
+                quidem quis incidunt sed fugit nesciunt quaerat natus consequatur. Atque iste reprehenderit assumenda
+                veniam nulla autem magni voluptate recusandae provident inventore sequi quis sint, iure voluptates
+                nostrum. Voluptas nisi vero inventore suscipit voluptatem a qui porro harum minima odit expedita facere
+                iste iusto dolores ullam nobis molestias natus, pariatur repellendus cum cupiditate perferendis soluta!
+                Voluptates neque, eligendi blanditiis vero voluptas impedit maxime nemo quibusdam? Perferendis qui at
+                debitis atque, sunt sapiente perspiciatis commodi eos tenetur deserunt modi minus veritatis delectus
+                numquam fugit sint veniam animi neque. Perspiciatis quia placeat est velit similique quaerat, iste
+                soluta fuga inventore ullam?
+                 ratione magni aspernatur pariatur quia quis quam, illum aliquam sequi dolorem dicta voluptatibus minima
+                consectetur iste autem vel doloremque ipsum, amet recusandae quaerat. Blanditiis repudiandae provident
+                aperiam aspernatur quos quidem harum labore et dolores at exercitationem amet dolor corrupti sequi quasi
+                sunt officia commodi autem laudantium, rem architecto, vitae facere laboriosam? Modi accusamus
+                reprehenderit voluptatem laboriosam beatae, minus maiores voluptate placeat consequatur veritatis,
+                reiciendis expedita necessitatibus praesentium labore aspernatur provident voluptatibus quod excepturi
+                voluptas laudantium molestias dolores. Omnis aspernatur animi placeat itaque fuga officiis ducimus unde,
+                architecto culpa. Error magni qui quaerat? Illo error ea vero quam! Error deleniti iusto molestiae quos
+                expedita ipsam, perferendis illo omnis porro magni id repudiandae distinctio magnam veniam doloremque
+                repellendus sint, facere hic eligendi harum adipisci! Ipsam, quibusdam! Modi velit error unde architecto
+                adipisci cumque iste quasi quas tempora quidem assumenda exercitationem totam, nostrum officiis delectus
+                illo in ratione vitae numquam! Cupiditate atque necessitatibus id voluptatum perferendis tempore ab,
+                quidem quis incidunt sed fugit nesciunt quaerat natus consequatur. Atque iste reprehenderit assumenda
+                veniam nulla autem magni voluptate recusandae provident inventore sequi quis sint, iure voluptates
+                nostrum. Voluptas nisi vero inventore suscipit voluptatem a qui porro harum minima odit expedita facere
+                iste iusto dolores ullam nobis molestias natus, pariatur repellendus cum cupiditate perferendis soluta!
+                Voluptates neque, eligendi blanditiis vero voluptas impedit maxime nemo quibusdam? Perferendis qui at
+                debitis atque, sunt sapiente perspiciatis commodi eos tenetur deserunt modi minus veritatis delectus
+                numquam fugit sint veniam animi neque. Perspiciatis quia placeat est velit similique quaerat, iste
+                soluta fuga inventore ullam?
+	
+
+            </div>
+
+
+            <div class="contact">
+                <p> @TM <br> AnguralTechnologies <br> Punjab , Pathankot <br> If Any Query  Write  Us On : anguralTechno@gmail.com</p>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+    <footer>
+        <div class="center">
+
+            copyright &copy;www.AnguralTechnologies.com . all rights reserved
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

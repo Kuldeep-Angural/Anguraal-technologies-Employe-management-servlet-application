@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AnguralTechnologies.com</title>
+    <link rel="stylesheet" href="CssContainer/style.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        width: 100wh;
+        background-image: url(pexels.jpg);
+
+        /* background-position: center;
+    background-size: cover; */
+        height: 100vh;
+    }
+
+    .navbar {
+        width: 100wh;
+        height: 75px;
+        margin: auto;
+    }
+
+    .icon {
+        width: 200px;
+        float: left;
+        height: 70px;
+    }
+
+    .logo {
+        color: #e76a05;
+        font-size: 35px;
+        font-family: Arial;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 5px
+    }
+
+    .menu {
+        width: 400px;
+        float: left;
+        height: 70px;
+    }
+
+    ul {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin-left: 124px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 1.0s ease-in-out;
+    }
+
+    ul li a:hover {
+        color: #e76a05;
+    }
+
+    .search {
+        width: 330px;
+        float: left;
+        margin-left: 270px;
+    }
+
+    .srch {
+        font-family: 'Times New Roman';
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid #f80d0d;
+        margin-top: 13px;
+        color: #fff;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        background: #f80d0d;
+        border: 2px solid #f80d0d;
+        margin-top: 13px;
+        color: #fff;
+        font-size: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: #000;
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+
+    .srch:focus {
+        outline: none;
+    }
+
+    .content {
+        width: 1200px;
+        height: 72vh;
+        margin: auto;
+        color: #fff;
+        position: relative;
+    }
+
+    .content .par {
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+    }
+
+    .content h1 {
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 4%;
+        letter-spacing: 2px;
+    }
+
+    .content .cn {
+        width: 224px;
+        height: 37px;
+        background: #e76a05;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .4s ease;
+        box-sizing: border-box;
+        position: relative;
+        top: 10px;
+
+    }
+
+    .content .cn a {
+        text-decoration: none;
+        color: #000;
+        transition: .3s ease;
+    }
+
+    .cn:hover {
+        background-color: #fff;
+    }
+
+    .content span {
+        color: #e76a05;
+        font-size: 58px
+    }
+
+
+    .btnn {
+        width: 240px;
+        height: 40px;
+        background: #f80d0d;
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        transition: 0.4s ease;
+    }
+
+    .btnn:hover {
+        background: #fff;
+        color: #f80d0d;
+    }
+
+    .btnn a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .form .link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .form .link a {
+        text-decoration: none;
+        color: #f80d0d;
+    }
+
+    .liw {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .icons ion-icon {
+        color: #fff;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+    }
+
+    .icons ion-icon:hover {
+        color: #f80d0d;
+    }
+
+    footer {
+        background-color: #e86126eb;
+        color: white;
+        font-size: 0.8rem;
+        padding: -2px 20px;
+        text-align: center;
+    }
+
+    .viewport {
+        box-sizing: border-box;
+        height: 490px;
+        width: 414px;
+        position: relative;
+        top: -410px;
+        right: -760px;
+        /* background-color: red; */
+        overflow: scroll;
+
+    }
+
+    .buttons {
+        box-sizing: border-box;
+        height: 370px;
+        width: 890px;
+        top: 70px;
+        right: -210px;
+        position: relative;
+        background-color: #e76a05;
+    }
+
+    .buttons button {
+
+
+        box-sizing: border-box;
+
+        height: 90px;
+        width: 60px;
+        top: 10px;
+        right: -10px;
+        justify-content: space-between;
+        position: relative;
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+
+
+    .form1 {
+        box-sizing: border-box;
+        height: 500px;
+        width: 500px;
+    background-color: red; 
+        position: relative;
+        color: #171a20;
+        top: 40px;
+        right: 450px;
+    }
+
+    input {
+        justify-content: center;
+        height: 30px;
+        margin-bottom: 20px;
+        width: 290px;
+        border-radius: 10px;
+    }
+
+    
+    
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+.container-form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    /* background-color: #f80d0d; */
+    box-sizing: border-box;
+    position: relative;top: 149px;
+    width: 558px;
+    right: -350px;
+}
+.form-input{
+  background: transparent;
+  outline: 2px solid #e76a05;
+  color: white;
+  /* background-color: #f80d0d; */
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  transition: 0.4s;
+
+}
+#form-submit{
+  background: #e76a05;
+ transition: 0.4s;
+}
+.form-input:hover{
+  font-size: 20px;
+  transition: 0.4s;
+  color: #e76a05;
+}
+#hover-text{
+  color: #e76a05;
+  font-size: 1.5em;
+}
+.not {
+    box-sizing: border-box;
+    position: relative;
+    top: -36px;
+    right: -584px;
+    width: 200px;
+    /* background-color: #f80d0d;  */
+    font-size: 9px;
+}
+
+
+
+/* Form Designing */
+section {
+        display: flex;
+        justify-content: center;
+        margin-top: 98px;
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    form {
+        background: #97979b;
+        padding: 20px;
+        border: 1px solid rgb(187, 187, 187);
+        box-shadow: 2px 2px 5px 0px black;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+    }
+
+    div {
+        position: relative;
+    }
+
+    .double-block div {
+        display: inline-block;
+    }
+
+    input:not(input[type="submit"]) {
+        padding: 5px 10px;
+        height: 20px;
+        background: transparent;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: solid 1px rgba(49, 49, 49, 0.527);
+        margin: 10px 5px;
+        outline: none;
+        z-index: 2;
+    }
+
+    input[type="email"] {
+        width: -webkit-fill-available;
+    }
+
+    span::after {
+        content: '';
+        width: 0;
+        margin: auto;
+        display: block;
+        height: 1px;
+        position: relative;
+        bottom: 13px;
+        color: rgb(49, 49, 49);
+        border-bottom: solid 2px;
+        transition: width .3s ease-in-out;
+        -webkit-transition: width .3s ease-in-out;
+        -moz-transition: width .3s ease-in-out;
+        -ms-transition: width .3s ease-in-out;
+        -o-transition: width .3s ease-in-out;
+    }
+
+    span:focus-within::after {
+        width: calc(100% - 10px);
+    }
+
+    input[type="submit"] {
+        padding: 8px 12px;
+        background-color: #fd79a8;
+        border: 1px solid #cc4c79;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        top: 0;
+        box-shadow: 3px 3px 10px 0px black;
+        border-radius: 2px;
+        margin-top: 10px;
+        margin-left: 5px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+        top: 5px;
+        background-color: #cc4c79;
+    }
+    .cid::before {
+        content: ' UniqueId';
+    }
+
+    .name::before {
+        content: ' Name';
+    }
+
+    .mobile::before {
+        content: 'mobile ';
+    }
+
+    .email::before {
+        content: 'Id';
+    }
+
+    .password::before {
+        content: 'Password';
+    }
+
+   
+
+    span {
+        z-index: 1;
+    }
+
+    span::before {
+        cursor: text;
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        bottom: 0;
+        font-size: initial;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+
+    span:focus-within::before,
+    span:focus::before,
+    span:focus-within:-webkit-autofill span::before {
+        top: 0;
+        left: 10px;
+        bottom: 30px;
+        font-size: .85em;
+    }
+
+    label {
+        cursor: text;
+        display: inline-block;
+        position: relative;
+        bottom: auto;
+        left: -5px;
+        transition: bottom .7s ease-in-out;
+        -webkit-transition: bottom .7s ease-in-out;
+        -moz-transition: bottom .7s ease-in-out;
+        -ms-transition: bottom .7s ease-in-out;
+        -o-transition: bottom .7s ease-in-out;
+    }
+</style>
+
+
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Angural Technologies</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="Login-SignUp.html">SIGNUP</a></li>
+                    <li><a href="contactUs.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <section>
+            <form action="DeleteEmploye">
+                <div class="double-block">
+                    
+
+
+
+                   
+                </div>
+
+
+
+
+               
+                <div>
+                    <div>
+                        <span class="email"><input type="number" name="id"></span>
+                    </div>
+                    
+                <div class="double-block">
+                    
+                    <div>
+                       
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Delete" placeholder="Delete">
+                </div>
+            </form>
+        </section>
+
+<div>
+    
+</div>
+
+
+
+        
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+    <footer>
+        <div class="center">
+
+            copyright &copy;www.AnguralTechnologies.com . all rights reserved
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

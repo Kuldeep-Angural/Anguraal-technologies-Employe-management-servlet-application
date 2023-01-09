@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AnguralTechnologies.com</title>
+    <link rel="stylesheet" href="CssContainer/style.css">
+</head>
+
+<style>
+
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100wh;
+    background-image: url(pexels.jpg);
+    
+    /* background-position: center;
+    background-size: cover; */
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #e76a05;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 123px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 1.0s ease-in-out;
+}
+
+ul li a:hover{
+    color:#e76a05;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #f80d0d;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background:#f80d0d;
+    border: 2px solid #f80d0d;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: 72vh;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 4%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 224px;
+    height: 37px;
+    background: #e76a05;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s ease;
+    box-sizing: border-box;
+    position: relative;
+    top: 10px;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #e76a05;
+    font-size: 58px
+}
+
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #f80d0d;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color:#f80d0d;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color:#f80d0d;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #f80d0d;
+}
+footer{
+    background-color:#e86126eb;
+    color: white;
+    font-size: 0.8rem;
+    padding: -2px 20px;
+    text-align: center;
+}
+.boxImage{
+	box-sizing: border-box;
+	height: 280px;
+	width: 380px;
+	position: relative;
+	top :-470px;
+	right:-810px;
+	/* background-color: red; */
+	
+}
+.boxImage img{
+	box-sizing:border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+	height: 280px;
+}
+</style>
+
+
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Angural Technologies</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="Login-SignUp.html">SIGNUP</a></li>
+                    <li><a href="contactUs.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+
+            
+
+        </div> 
+        <div class="content">
+            <h1> Employee Management<br><span> System </span> <br></h1>
+            <p class="par"> is a distributed application,<br> developed to maintain the details <br>of employees working in any organization.<br> It maintains the information about the<br> personal details of their employees.<br> The application is actually a suite of applications developed using<br>Java , Servlet , Hibernate Jpa
+           
+
+          </p>
+
+                <button class="cn"><a href="Login-SignUp.html">Login/Sign-Up </a></button>
+                <div class ="boxImage"> 
+                
+                <img alt="" src="angural-technologies-logo-removebg-preview.png">
+                
+                
+                 </div>
+                
+              
+                
+
+                
+
+                   
+
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+   
+    <footer>
+    <div class="center">
+       
+        copyright &copy;www.AnguralTechnologies.com . all rights reserved
+
+    </div>
+</footer>
+
+
+</body>
+</html>
